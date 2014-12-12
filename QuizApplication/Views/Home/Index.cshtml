@@ -1,0 +1,165 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="container-slider">
+    <div id="slide1" class="slides" style="background-image: url(../Images/test1.jpg)"></div>
+    <div id="slide2" class="slides" style="background-image: url(../Images/test2.jpg)"></div>
+    <div id="slide3" class="slides" style="background-image: url(../Images/test3.jpg)"></div>
+    <div id="slide4" class="slides" style="background-image: url(../Images/test4.jpg)"></div>
+    <div id="slide5" class="slides" style="background-image: url(../Images/test5.jpg)">
+        <div id="slide5-container" class="container">
+            <div id="title" class="row">
+                <div id="title-text" class="col-sm-12 col-xs-12 col-md-12">
+                    <span>コミュニケーション道場</span>
+                </div>
+                <div id="sub-title" class="col-sm-12 col-xs-12 col-md-12">
+                    <span id="sub-title-text" class="fade-animation">CLICK to START</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main container -->
+<div id="container-main" class="container">
+    <!-- start header -->
+    <div class="row" id="header">
+        <div class="header col-sm-12 col-xs-12 col-md-4">
+            <span>コミュニケーション道場(仮)</span>
+        </div>
+        <div class="header col-sm-12 col-xs-12 col-md-4">
+        </div>
+        <div id="header-right" class="header col-sm-12 col-xs-12 col-md-4">
+            <span style="font-size:small">F11キーを押してね !!</span>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start content -->
+    <div class="row" id="content">
+        <div class="col-sm-0 col-xs-0 col-md-2"></div>
+        <div id="content-body" class="col-sm-12 col-xs-12 col-md-8">
+            <div class="row question col-sm-12 col-xs-12 col-md-12">
+                <div class="content-image col-sm-2 col-xs-2 col-md-2">
+                    <img src="~/Images/aragaki_yui.jpeg" alt="" class="img-rounded question-img">
+                </div>
+                <div class="hukidashi q-hukidashi col-sm-10 col-xs-10 col-md-10">
+                    <span id="question-text"></span>
+                </div>
+            </div>
+            <div class="row side-padding-cleafix col-sm-12 col-xs-12 col-md-12">
+                <div class="col-sm-10 col-xs-10 col-md-10">
+                    <div id="ans1" class="row answer hukidashi a-hukidashi col-sm-12 col-xs-12 col-md-12">
+                        <span class="answer-text"></p>
+                    </div>
+                    <div id="ans2" class="row answer hukidashi a-hukidashi col-sm-12 col-xs-12 col-md-12">
+                        <span class="answer-text"></p>
+                    </div>
+                    <div id="ans3" class="row answer hukidashi a-hukidashi col-sm-12 col-xs-12 col-md-12">
+                        <span class="answer-text"></p>
+                    </div>
+                    <div id="ans4" class="row answer hukidashi a-hukidashi col-sm-12 col-xs-12 col-md-12">
+                        <span class="answer-text"></p>
+                    </div>
+                </div>
+                <div class="content-image col-sm-2 col-xs-2 col-md-2">
+                    <img src="~/Images/kinoko.jpeg" alt="" class="img-rounded answer-img">
+                </div>
+            </div>
+            <!-- hidden message -->
+            <div class="row question response col-sm-12 col-xs-12 col-md-12">
+                <div class="content-image col-sm-2 col-xs-2 col-md-2">
+                    <img src="~/Images/aragaki_yui.jpeg" alt="" class="img-rounded question-img">
+                </div>
+                <div class="hukidashi q-hukidashi col-sm-10 col-xs-10 col-md-10">
+                    <span id="response-text"></p>
+                </div>
+            </div>
+            <div id="incorrect-message" class="row correct-answer col-sm-12 col-xs-12 col-md-12">
+                <span>不正解でした...	正解は...</span>
+            </div>
+            <div class="row answer correct-answer col-sm-12 col-xs-12 col-md-12">
+                <div class="row">
+                    <div class="hukidashi c-hukidashi col-sm-10 col-xs-10 col-md-10">
+                        <span id="correct-answer-text"></p>
+                    </div>
+                    <div class="content-image col-sm-2 col-xs-2 col-md-2">
+                        <img src="~/Images/kinoko.jpeg" alt="" class="img-rounded answer-img">
+                    </div>
+                </div>
+            </div>
+            <div id="correct-message" class="row col-sm-12 col-xs-12 col-md-12">
+                <p>正解	<span id="score"></span>pt	獲得</p>
+            </div>
+            <!-- end hidden message -->
+            <!-- buttons -->
+            <div class="row" id="next-button">
+                <div class="col-sm-5 col-xs-5 col-md-5 blank"></div>
+                <div class="col-sm-2 col-xs-2 col-md-2">
+                    <a rel="leanModal" href="#div787">
+                        <button id="modal-situation" type="button" class="btn btn-success btn-lg next-start">NEXT</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row" id="result-button">
+                <div class="col-sm-5 col-xs-5 col-md-5 blank"></div>
+                <div class="col-sm-2 col-xs-2 col-md-2">
+                    <a rel="leanModal" href="#result-modal">
+                        <button id="modal-result" type="button" class="btn btn-info btn-lg show-result">Result</button>
+                    </a>
+                </div>
+            </div>
+            <!-- end buttons -->
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- modal content -->
+    <div id="modal-content" class="row">
+        <div class="col-sm-0 col-xs-0 col-md-2"></div>
+        <div id="div787" class=" modal_close col-sm-12 col-xs-12 col-md-8">
+            <!-- モーダルウィンドウ内に表示する要素 -->
+            <h1 id="quiz-num">第<span></span>問</h1>
+            <div id="situation" class="col-sm-12 col-xs-12 col-md-12">
+                <p id="situation-text"></p>
+            </div>
+        </div>
+        <div id="result-modal" class="modal_window row">
+            <!-- モーダルウィンドウ内に表示する要素 -->
+            <h1 id="quiz-num">Result</h1>
+            <h2 id="total-score">あなたの得点は<span></span>ptです！</h2>
+            <div class="row">
+                <div class="row" id="result-message1">
+                    <div class="col-sm-0 col-xs-0 col-md-1 blank"></div>
+                    <div class="content-image col-sm-2 col-xs-2 col-md-2"><img src="~/Images/aragaki_yui.jpeg" alt="" class="img-rounded question-img"></div>
+                    <div class="hukidashi q-hukidashi col-sm-10 col-xs-10 col-md-8">
+                        <span id="question-text">なかなかやるじゃん！</span>
+                    </div>
+                </div>
+                <div class="row" id="result-message2">
+                    <div class="col-sm-0 col-xs-0 col-md-1 blank"></div>
+                    <div class="hukidashi a-hukidashi-selected col-sm-10 col-xs-10 col-md-8">
+                        <span class="answer-text">これで俺も…</span>
+                    </div>
+                    <div class="content-image col-sm-2 col-xs-2 col-md-2"><img src="~/Images/kinoko.jpeg" alt="" class="img-rounded answer-img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-xs-5 col-md-5 blank"></div>
+                    <button id="resetbutton" type="button" class="btn btn-warning btn-lg restart-button">タイトルに戻る</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal content -->
+    <!-- footer -->
+    <div id="footer" class="row">
+        <footer class="side-padding-cleafix col-sm-12 col-xs-12 col-md-12">
+            created by group 8 - 情報科学部コミュ力向上委員会 -
+        </footer>
+    </div>
+    <!-- end footer -->
+</div>
+<!-- end main container -->
+<!-- Event JS -->
+
+<script type="text/javascript" src="js/events.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>

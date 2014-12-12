@@ -1,0 +1,285 @@
+/*My CSS style*/
+@font-face {
+    src: url(../fonts/RiiT_F.otf);
+    font-family: RiiT_F;
+}
+/*reset bootstrap setting*/
+.side-padding-cleafix {
+    padding:0px;
+}
+body {
+    font-family: RiiT_F;
+    background-color: rgb(30,136,168);
+    font-size: 2.7rem;
+    word-wrap: break-word;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.container{
+    min-width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.blank {
+    height: 0px;
+}
+/*end reset bootstrap setting*/
+/*wrapper*/
+#container-main {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: none;
+}
+/*end wrapper*/
+/*header*/
+div#header {
+    height:40px;
+    font-size: 80%;
+    text-align:center;
+    background-color: rgb(38,69,61);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    color:white;
+}
+.header{
+    padding-left:0px;
+    padding-right:0px;
+}
+#header #header-right {
+    color: white;
+    text-align: right;
+}
+/*end header*/
+/*footer*/
+#footer {
+    width:100vw;
+    height:20px;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    font-size: 0.1rem;
+}
+/*end footer*/
+/*modal*/
+#lean_overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: none;
+}
+.modal_close {
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+.modal_window {
+    border-radius: 10px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    height: 80vh;
+}
+#div787 {
+    border-radius: 10px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    display: none;
+    height: 80vh;
+    margin-top:0px;
+}
+/*result modal*/
+#result-modal > h2 {
+    text-align: center;
+}
+#result-message1, #result-message2 {
+    margin-top: 30px;
+}
+#result-message1 .hukidashi {
+    position: relative;
+}
+/*end result modal*/
+.restart-button {
+    margin-top: 30px;
+}
+/*end modal*/
+/*slider*/
+#container-slider {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+#container-slider .slides {
+    width: 100%;
+    height: 100%;
+}
+#container-slider .slides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#container-slider #slide1 {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+/*slide5 title*/
+#slide5 {
+
+}
+#slide5 #slide5-container {
+    margin: 0px;
+    width: 100%;
+}
+#slide5 #slide5-container #title {
+    height: 80vh;
+}
+#slide5 #slide5-container #title #title-text {
+    display: table;
+    height: 70%;
+}
+#slide5 #slide5-container #title #title-text span {
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    /*font-size: 11rem;*/
+   font-size: 8vw;
+    color:#FFFFFF;
+}
+#slide5 #slide5-container #title #sub-title {
+    display:table;
+    text-align: center;
+    color:#FFFFFF;
+}
+#slide5 #slide5-container #title #sub-title span{
+    display:table-row;
+    text-align: center;
+    color:#FFFFFF;
+    font-size:3.5vw;
+}
+/*end slide5 title*/
+/*end slider*/
+
+
+/*content*/
+#content{
+    min-height:90.5vh;
+}
+#content-body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.question, .answer {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.content-image {
+    
+}
+.hukidashi {
+    display: table;
+    min-height:100px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(242,233,225);
+    box-shadow: 3px 3px 5.5px rgba(0,0,0,0.2);
+    /*animation setting*/
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.hukidashi span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.question .hukidashi {
+    
+}
+.question-img {
+    height: auto;
+    width: 100%;
+    /*min-width: 50px;*/
+}
+.answer-img {
+    height: auto;
+    width: 100%;
+    /*min-width: 50px;*/
+}
+
+.q-hukidashi:after {
+    content: '';
+    position: absolute;
+    border-top: 15px solid rgb(242,233,225);
+    border-left: 14px solid transparent;
+    bottom: 29px;
+    left: -14px;
+}
+.a-hukidashi:after, .c-hukidashi:after {
+    content: '';
+    position: absolute;
+    border-top: 16px solid rgb(242,233,225);
+    border-right: 14px solid transparent;
+    bottom: 18%;
+    left: 99.6%;
+}
+/*hukidashi event*/
+.a-hukidashi:hover {
+    background: rgb(206,232,106);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+}
+.a-hukidashi:hover:after {
+    border-top: 16px solid rgb(206,232,106);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+}
+.a-hukidashi-selected {
+    background: rgb(206,232,106);
+}
+.a-hukidashi-selected:after {
+    content: '';
+    position: absolute;
+    border-top: 16px solid rgb(206,232,106);
+    border-right: 14px solid transparent;
+    bottom: 18%;
+    left: 99.6%;
+}
+/*end hukidashi event*/
+/*hidden message*/
+.response {
+    display: none;
+}
+.correct-answer {
+    display: none;
+    border: 5px;
+    border-radius: 10px;
+}
+#incorrect-message, #correct-message{
+    text-align: center;    
+}
+#next-button, #result-button {
+    display: none;
+}
+#correct-message {
+    display: none;
+}
+h1#quiz-num, h1#quiz-num {
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+}
+#situation {
+    height: 80%;
+    overflow: auto;
+    font-size: font-size: 50%;;
+}
+/*end hidden message*/
+

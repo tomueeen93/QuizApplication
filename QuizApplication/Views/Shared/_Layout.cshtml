@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コミュニケーション道場</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/myscripts")
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="~/Scripts/myscript/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/myscript/jquery.leanModal.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/myscript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="~/Scripts/myscript/jquery.skippr.js"></script>
+    <script type="text/javascript" src="~/Scripts/myscript/ion.sound.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/myscript//main.js"></script>
+
+    <!-- css reset -->
+    <link href="~/Content/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="~/Content/jquery.skippr.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+
+</head>
+<body>
+
+    @RenderBody()
+
+    
+    <!-- Event JS -->
+    <script type="text/javascript" src="~/Scripts/myscript/events.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/Scripts/myscript/bootstrap.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
