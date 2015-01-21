@@ -7,10 +7,10 @@ questions_length = 0;
 current_question_num = 0;
 hukidashi_selectable = false;
 slide_counter = 5;
-quiz_file_name ="data/shu_quiz_data2.txt"
+quiz_file_name = "data/quiz_data_complete2.txt";
 
 // テスト用
-QUESTIONS = 2;// 出題数
+QUESTIONS = 5;// 出題数
 
 // メイン関数
 $(document).ready(function() {

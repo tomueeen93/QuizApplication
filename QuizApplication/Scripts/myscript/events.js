@@ -21,7 +21,7 @@ $(".a-hukidashi").click(function() {
 		}
 		// レスポンスの表示
 		var response_index = (4 + (selected_index * 2) + 1);
-		$('#response-text').text(quiz_list[current_question_num][response_index]);
+		$('#response-text').html(quiz_list[current_question_num][response_index]);
 		$('.response').delay(3200).fadeToggle("fast",function(){
 			ion.sound.play("button_tiny");
 		});
@@ -44,7 +44,7 @@ $(".a-hukidashi").click(function() {
 			// 不正解の場合
 			console.log("incorrect answer");
 			var answer_index = (4 + (getIndex(correct_answer_id)*2));
-			$('#correct-answer-text').text(quiz_list[current_question_num][answer_index]);
+			$('#correct-answer-text').html(quiz_list[current_question_num][answer_index]);
 			$('.correct-answer').delay(6600).fadeToggle("slow",function(){
 				ion.sound.play("shock3", {
 				    onEnded: function (name) {
